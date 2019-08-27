@@ -18,3 +18,13 @@ public string discriminante(double a,double b, double c)
             }
             
         }
+
+public double valorAbsoluto(double n)
+{
+	if (n < 1)
+	{
+        	return -1 * n;
+        }
+        	return n;
+        }
+}

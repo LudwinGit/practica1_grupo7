@@ -1,0 +1,4 @@
+public int potenciaCubo(int numero)
+{
+    return (numero*numero*numero);
+}

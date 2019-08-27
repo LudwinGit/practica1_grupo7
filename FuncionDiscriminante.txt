@@ -1,0 +1,20 @@
+public string discriminante(double a,double b, double c)
+        {
+            double raizPositiva = (-b + (Math.Sqrt(Math.Pow(b, 2) - 4 * a * c))) / (2 * a);
+            double raizNegativa = (-b - (Math.Sqrt(Math.Pow(b, 2) - 4 * a * c))) / (2 * a);
+
+            if (raizNegativa.ToString() == "NaN" || raizPositiva.ToString() == "NaN")
+            {
+                return "la raiz no es real";
+            }
+            else if (raizPositiva != raizNegativa)
+            {
+                
+                return "la raiz positiva es: " + raizPositiva.ToString() + " la raiz negativa es: " + raizNegativa.ToString();
+            }
+            else
+            {
+                return "la raiz es: " + raizPositiva.ToString();
+            }
+            
+        }

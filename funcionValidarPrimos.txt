@@ -1,0 +1,14 @@
+public Boolean validarPrimo(int numero)
+{
+    int contador = 0;
+    for (int i = 1; i <= numero ; i++)
+    {
+        if (numero % i == 0)
+            contador++;
+    }
+    
+    if (contador == 2)
+        return true;
+    else
+        return false;
+}

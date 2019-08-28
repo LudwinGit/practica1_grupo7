@@ -2,6 +2,11 @@ public string discriminante(double a,double b, double c)
         {
             double raizPositiva = (-b + (Math.Sqrt(Math.Pow(b, 2) - 4 * a * c))) / (2 * a);
             double raizNegativa = (-b - (Math.Sqrt(Math.Pow(b, 2) - 4 * a * c))) / (2 * a);
+	
+	if(a==2.1 && b==3.2 && c==1.2)
+	{
+		return "el resultado deberia ser -6/7 y -2/3 estos son los resultados: "+ raizPositiva.ToString() + " y " + raizNegativa.ToString();
+	}
 
             if (raizNegativa.ToString() == "NaN" || raizPositiva.ToString() == "NaN")
             {

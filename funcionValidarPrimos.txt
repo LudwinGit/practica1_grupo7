@@ -2,6 +2,9 @@ public Boolean validarPrimo(int numero)
 {
     if(numero < 0)
         return false;
+
+    if(numero > 200)
+        return false;
         
     int contador = 0;
     for (int i = 1; i <= numero ; i++)

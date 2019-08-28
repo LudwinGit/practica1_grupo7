@@ -1,7 +1,19 @@
 public int multiplicacion(int numero1,int numero2){
+    Console.printl(numero1);
     return numero1*numero2;
 }
 
 public double division(int numero1,int numero2){
-	return numero1/numero2;
+
+    if(numero1<numero2)
+        return -2;
+
+	if(numero2 == 0)
+	{
+		return -1;
+	}
+	else
+	{    
+		return numero1/numero2;
+	}
 }

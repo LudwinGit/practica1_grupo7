@@ -19,12 +19,12 @@ public string discriminante(double a,double b, double c)
             
         }
 
-public double valorAbsoluto(double n)
+public string valorAbsoluto(double n)
 {
 	if (n < 1)
 	{
-        	return -1 * n;
+        	return "El valor absoluto es:" + (-1 * n) + "El cuadrado del numero es:" + (n*n);
         }
-        	return n;
+        	return "El valor absoluto es:" + n + "El cuadrado del numero es:" + (n*n);
         }
 }

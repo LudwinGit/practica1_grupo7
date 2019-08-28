@@ -6,6 +6,9 @@ public string discriminante(double a,double b, double c)
 	if(a==2.1 && b==3.2 && c==1.2)
 	{
 		return "el resultado deberia ser -6/7 y -2/3 estos son los resultados: "+ raizPositiva.ToString() + " y " + raizNegativa.ToString();
+	}else
+	{
+		Console.println("En la ecuacion discriminante se ingresaron valores diferentes -> a=2.1, b=3.2 y c=1.2");
 	}
 
             if (raizNegativa.ToString() == "NaN" || raizPositiva.ToString() == "NaN")

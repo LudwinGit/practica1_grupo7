@@ -23,8 +23,8 @@ public string valorAbsoluto(double n)
 {
 	if (n < 1)
 	{
-        	return "El valor absoluto es:" + (-1 * n) + "El cuadrado del numero es:" + (n*n);
+        	return "Valor absoluto:" + (-1 * n) + "; Numero al cuadrado:" + (n*n) + "; La mitad del numero:" + (n/2);
         }
-        	return "El valor absoluto es:" + n + "El cuadrado del numero es:" + (n*n);
+        	return "Valor absoluto:" + n + "; Numero al cuadrado:" + (n*n) + "; La mitad del numero:" + (n/2);
         }
 }

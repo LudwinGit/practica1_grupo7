@@ -3,9 +3,16 @@ public int potenciaCubo(int numero)
     return (numero*numero*numero);
 }
 
-public double raizCubica(double numero)
+public double raizCubica(double numero, double indice)
 {
 	double resultado = 0;
-        resultado = Math.Pow(numero, (1.0 / 3.0));
-        return resultado;
+	if(indice == 0)
+	{
+		return -1;
+	}
+	else
+	{
+        	resultado = Math.Pow(numero, (1.0 / indice));
+        	return resultado;
+	}
 }

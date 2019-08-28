@@ -2,6 +2,14 @@ public string discriminante(double a,double b, double c)
         {
             double raizPositiva = (-b + (Math.Sqrt(Math.Pow(b, 2) - 4 * a * c))) / (2 * a);
             double raizNegativa = (-b - (Math.Sqrt(Math.Pow(b, 2) - 4 * a * c))) / (2 * a);
+	
+	if(a==2.1 && b==3.2 && c==1.2)
+	{
+		return "el resultado deberia ser -6/7 y -2/3 estos son los resultados: "+ raizPositiva.ToString() + " y " + raizNegativa.ToString();
+	}else
+	{
+		Console.println("En la ecuacion discriminante se ingresaron valores diferentes -> a=2.1, b=3.2 y c=1.2");
+	}
 
             if (raizNegativa.ToString() == "NaN" || raizPositiva.ToString() == "NaN")
             {
@@ -23,8 +31,8 @@ public string valorAbsoluto(double n)
 {
 	if (n < 1)
 	{
-        	return "El valor absoluto es:" + (-1 * n) + "El cuadrado del numero es:" + (n*n);
+        	return "Valor absoluto:" + (-1 * n) + "; Numero al cuadrado:" + (n*n) + "; La mitad del numero:" + (n/2);
         }
-        	return "El valor absoluto es:" + n + "El cuadrado del numero es:" + (n*n);
+        	return "Valor absoluto:" + n + "; Numero al cuadrado:" + (n*n) + "; La mitad del numero:" + (n/2);
         }
 }
